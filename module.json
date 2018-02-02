@@ -1,0 +1,16 @@
+{
+    "name": "RROutlet",
+    "alias": "rroutlet",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\RROutlet\\Providers\\RROutletServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

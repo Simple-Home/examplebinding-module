@@ -1,0 +1,26 @@
+{
+    "name": "markushaug/homify-rfoutlet",
+    "description": "",
+    "authors": [
+        {
+            "name": "Markus Haug",
+            "email": "mh@haugmarkus.de"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\RFOutlet\\Providers\\RROutletServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\RFOutlet\\": ""
+        }
+    }
+}
+
