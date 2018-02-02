@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-    "markushaug/homify-exec": ">=1.0"
+    "markushaug/homify-exec": ">=1"
     },
     "extra": {
         "laravel": {
