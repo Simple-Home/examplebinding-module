@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-    "markushaug/homify-exec": "^dev-master"
+    "markushaug/homify-exec": ">=dev-master"
     },
     "extra": {
         "laravel": {
