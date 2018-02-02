@@ -16,7 +16,7 @@ Control you RF-Outlets with homify via 433Mhz
 ## Installation
 
 1. Navigate into your homify folder
-3. Run ```composer require markushaug/homify-rf-outlet``` 
+3. Run ```composer require markushaug/homify-rfoutlet``` 
 
 ## Usage
 
