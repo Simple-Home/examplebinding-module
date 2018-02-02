@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\RFOutlet\\Providers\\RROutletServiceProvider"
+                "Modules\\RFOutlet\\Providers\\RFOutletServiceProvider"
             ],
             "aliases": {
                 
