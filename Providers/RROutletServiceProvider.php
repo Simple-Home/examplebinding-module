@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\RROutlet\Providers;
+namespace Modules\RFOutlet\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
-class RROutletServiceProvider extends ServiceProvider
+class RFOutletServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -46,10 +46,10 @@ class RROutletServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('rroutlet.php'),
+            __DIR__.'/../Config/config.php' => config_path('rfoutlet.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'rroutlet'
+            __DIR__.'/../Config/config.php', 'rfoutlet'
         );
     }
 
@@ -60,7 +60,7 @@ class RROutletServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = resource_path('views/modules/rroutlet');
+        $viewPath = resource_path('views/modules/rfoutlet');
 
         $sourcePath = __DIR__.'/../Resources/views';
 
