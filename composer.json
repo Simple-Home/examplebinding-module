@@ -7,6 +7,9 @@
             "email": "mh@haugmarkus.de"
         }
     ],
+    "require": {
+    "markushaug/homify-exec": ">1.0"
+    },
     "extra": {
         "laravel": {
             "providers": [
