@@ -1,4 +1,4 @@
-## homify-rfoutlet - RF-Outlet Module for homify
+## homify-rfoutlet - RFOutlet Module for homify
 Control you RF-Outlets with homify via 433Mhz
 
 ## Requirements
@@ -19,6 +19,9 @@ Control you RF-Outlets with homify via 433Mhz
 3. Run ```composer require markushaug/homify-rfoutlet``` 
 
 ## Usage
+
+The following json is required for the plug-in, when you create a new thing:
+- ```{"default_on":5505425, "default_off": 5505425}```
 
 Homify's routing is fully dynamically. You can use the following URL to access your things:
 
