@@ -45,7 +45,7 @@ class RFOutlet extends Switcher
     public function on()
     {
         $this->thing->codesend($this->sig_on);
-        $this->setStatus('1');
+        $this->setStatus('ON');
     }
 
     /**
@@ -54,7 +54,7 @@ class RFOutlet extends Switcher
     public function off()
     {
         $this->thing->codesend($this->sig_off);
-        $this->setStatus('0');
+        $this->setStatus('ON');
 
     }
 
