@@ -22,7 +22,7 @@ Control you RF-Outlets with homify via 433Mhz
 
 Homify's routing is fully dynamically. You can use the following URL to access your things:
 
-- ```https://<server_ip>/<thing_name>/<channel>```
+- ```https://<server_ip>/thing/<thing_name>/<channel>```
 
 ## Channels
 The following channels are available.
