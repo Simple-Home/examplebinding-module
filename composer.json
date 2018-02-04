@@ -1,5 +1,6 @@
 {
     "name": "markushaug/homify-rfoutlet",
+    "type": "laravel-module",
     "description": "",
     "authors": [
         {
