@@ -6,7 +6,7 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\RROutlet\\Providers\\RROutletServiceProvider"
+        "Modules\\RFOutlet\\Providers\\RFOutletServiceProvider"
     ],
     "aliases": {},
     "files": [
