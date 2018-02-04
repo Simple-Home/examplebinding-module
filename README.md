@@ -8,10 +8,6 @@ Control you RF-Outlets with homify via 433Mhz
 
 - Control you RF-Outlets with homify via 433Mhz
 
-## Coming soon
-
-- Autogeneration of HomeBridge config files
-
 
 ## Installation
 
