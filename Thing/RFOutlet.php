@@ -60,7 +60,6 @@ class RFOutlet extends Switcher
 
     public function output()
     {
-        echo $this->getStatus();
         return $this->getStatus();
     }
 
