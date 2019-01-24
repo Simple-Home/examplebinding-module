@@ -28,8 +28,8 @@ class Sender
     public function codesend($lv_code)
     {
 
-        $this->exec->shell_exec('codesend', $lv_code);
-
+        //$this->exec->shell_exec('codesend', $lv_code);
+        exec("sudo ". env('exec_path'). "codesend " . $lv_code);
     }
 
 }
