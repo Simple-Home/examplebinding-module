@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\Example\Http\Controllers;
+namespace Modules\ExampleLight\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class ExampleController extends Controller
+class ExampleLightController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ExampleController extends Controller
      */
     public function index()
     {
-        return view('example::index');
+        return view('exampleLight::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class ExampleController extends Controller
      */
     public function create()
     {
-        return view('example::create');
+        return view('exampleLight::create');
     }
 
     /**
@@ -41,7 +41,7 @@ class ExampleController extends Controller
      */
     public function show()
     {
-        return view('example::show');
+        return view('exampleLight::show');
     }
 
     /**
@@ -50,7 +50,7 @@ class ExampleController extends Controller
      */
     public function edit()
     {
-        return view('example::edit');
+        return view('exampleLight::edit');
     }
 
     /**

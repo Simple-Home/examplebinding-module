@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware' => 'web', 'prefix' => 'example', 'namespace' => 'Modules\Example\Http\Controllers'], function()
+Route::group(['middleware' => 'web', 'prefix' => 'exampleLight', 'namespace' => 'Modules\ExampleLight\Http\Controllers'], function()
 {
-    Route::get('/', 'ExampleController@index');
+    Route::get('/', 'ExampleLightController@index');
 });

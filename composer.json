@@ -13,16 +13,15 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Example\\Providers\\ExampleServiceProvider"
+                "Modules\\ExampleLight\\Providers\\ExampleLightServiceProvider"
             ],
-            "aliases": {
-                
+            "aliases": {  
             }
         }
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Example\\": ""
+            "Modules\\ExampleLight\\": ""
         }
     }
 }

@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Example\Providers;
+namespace Modules\ExampleLight\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
-class ExampleServiceProvider extends ServiceProvider
+class ExampleLightServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -46,10 +46,10 @@ class ExampleServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('example.php'),
+            __DIR__.'/../Config/config.php' => config_path('exampleLight.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'example'
+            __DIR__.'/../Config/config.php', 'exampleLight'
         );
     }
 
@@ -60,7 +60,7 @@ class ExampleServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = resource_path('views/modules/example');
+        $viewPath = resource_path('views/modules/exampleLight');
 
         $sourcePath = __DIR__.'/../Resources/views';
 
@@ -69,8 +69,8 @@ class ExampleServiceProvider extends ServiceProvider
         ],'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/example';
-        }, \Config::get('view.paths')), [$sourcePath]), 'example');
+            return $path . '/modules/exampleLight';
+        }, \Config::get('view.paths')), [$sourcePath]), 'exampleLight');
     }
 
     /**
@@ -85,7 +85,7 @@ class ExampleServiceProvider extends ServiceProvider
         if (is_dir($langPath)) {
             $this->loadTranslationsFrom($langPath, 'example');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'example');
+            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'exampleLight');
         }
     }
 

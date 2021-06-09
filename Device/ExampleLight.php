@@ -1,14 +1,14 @@
 <?php
-namespace Modules\Example\Device;
+namespace Modules\ExampleLight\Device;
 
-use Modules\Example\Binding\Sender;
+use Modules\ExampleLight\Binding\Sender;
 use App\DeviceTypes\BasicSwitch\BasicSwitch;
 
 /**
  * Class Example
  * @package App\DeviceTypes\BasicSwitch
  */
-class Example extends BasicSwitch
+class ExampleLight extends BasicSwitch
 {
 
     /**
