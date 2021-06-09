@@ -1,12 +1,12 @@
 {
-    "name": "RFOutlet",
-    "alias": "rfoutlet",
+    "name": "Example",
+    "alias": "example",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\RFOutlet\\Providers\\RFOutletServiceProvider"
+        "Modules\\Example\\Providers\\RFOutletServiceProvider"
     ],
     "aliases": {},
     "files": [

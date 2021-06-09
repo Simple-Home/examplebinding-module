@@ -1,4 +1,4 @@
-@extends('rfoutlet::layouts.master')
+@extends('example::layouts.master')
 
 @section('content')
     <h1>Example Module</h1>

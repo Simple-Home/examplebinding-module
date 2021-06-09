@@ -8,6 +8,12 @@
             "email": ""
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://github.com/thebradleysanders/SimpleHome-Example"
+        }
+    ],
     "require": {
     },
     "extra": {
