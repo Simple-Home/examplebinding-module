@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\RROutlet\Http\Controllers;
+namespace Modules\Example\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class RROutletController extends Controller
+class ExampleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class RROutletController extends Controller
      */
     public function index()
     {
-        return view('rroutlet::index');
+        return view('example::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class RROutletController extends Controller
      */
     public function create()
     {
-        return view('rroutlet::create');
+        return view('example::create');
     }
 
     /**
@@ -41,7 +41,7 @@ class RROutletController extends Controller
      */
     public function show()
     {
-        return view('rroutlet::show');
+        return view('example::show');
     }
 
     /**
@@ -50,7 +50,7 @@ class RROutletController extends Controller
      */
     public function edit()
     {
-        return view('rroutlet::edit');
+        return view('example::edit');
     }
 
     /**

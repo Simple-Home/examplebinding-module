@@ -1,20 +1,19 @@
 {
-    "name": "markushaug/homify-rfoutlet",
+    "name": "thebradleysanders/SimpleHome-Example",
     "type": "laravel-module",
     "description": "",
     "authors": [
         {
-            "name": "Markus Haug",
-            "email": "mh@haugmarkus.de"
+            "name": "Brad Sanders",
+            "email": ""
         }
     ],
     "require": {
-    "markushaug/homify-exec": ">=1"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\RFOutlet\\Providers\\RFOutletServiceProvider"
+                "Modules\\Example\\Providers\\ExampleServiceProvider"
             ],
             "aliases": {
                 
@@ -23,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\RFOutlet\\": ""
+            "Modules\\Example\\": ""
         }
     }
 }

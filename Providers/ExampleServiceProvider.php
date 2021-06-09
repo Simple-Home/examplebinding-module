@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\RFOutlet\Providers;
+namespace Modules\Example\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
-class RFOutletServiceProvider extends ServiceProvider
+class ExampleServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -46,10 +46,10 @@ class RFOutletServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('rfoutlet.php'),
+            __DIR__.'/../Config/config.php' => config_path('example.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'rfoutlet'
+            __DIR__.'/../Config/config.php', 'example'
         );
     }
 
@@ -60,7 +60,7 @@ class RFOutletServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = resource_path('views/modules/rfoutlet');
+        $viewPath = resource_path('views/modules/example');
 
         $sourcePath = __DIR__.'/../Resources/views';
 
@@ -69,8 +69,8 @@ class RFOutletServiceProvider extends ServiceProvider
         ],'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/rroutlet';
-        }, \Config::get('view.paths')), [$sourcePath]), 'rroutlet');
+            return $path . '/modules/example';
+        }, \Config::get('view.paths')), [$sourcePath]), 'example');
     }
 
     /**
@@ -80,12 +80,12 @@ class RFOutletServiceProvider extends ServiceProvider
      */
     public function registerTranslations()
     {
-        $langPath = resource_path('lang/modules/rroutlet');
+        $langPath = resource_path('lang/modules/example');
 
         if (is_dir($langPath)) {
-            $this->loadTranslationsFrom($langPath, 'rroutlet');
+            $this->loadTranslationsFrom($langPath, 'example');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'rroutlet');
+            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'example');
         }
     }
 
