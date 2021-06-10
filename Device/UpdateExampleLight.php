@@ -32,11 +32,11 @@ class UpdateExampleLight
         $roomID = $this->data['room'];
         $json = $this->data['json'];
 
-        Thing::where('id', $thingID)
+        Device::where('id', $deviceID)
             ->update(
                 [
-                    'thing' => $deviceName,
-                    'thingType' => $deviceType,
+                    'device' => $deviceName,
+                    'deviceType' => $deviceType,
                     'binding' => $binding,
                     'room_id' => $roomID
                 ]);
