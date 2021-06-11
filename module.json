@@ -1,12 +1,12 @@
 {
-    "name": "ExampleLight",
-    "alias": "exampleLight",
+    "name": "ExampleBinding",
+    "alias": "ExampleBinding",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\ExampleLight\\Providers\\ExampleLightServiceProvider"
+        "Modules\\ExampleBinding\\Providers\\ExampleBindingServiceProvider"
     ],
     "aliases": {},
     "files": [
