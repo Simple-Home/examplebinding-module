@@ -24,7 +24,7 @@ class ExampleBinding extends Light
     public function state($value, $args){ 
         //This is where you control the light
 
-        //This is how you notify Simple Home of the state chagne
+        //This is how you notify Simple Home of the state change
         $this->setState('state', $value);
         $this->setState('brightness', $args['brightness']);
     }

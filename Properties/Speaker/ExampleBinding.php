@@ -20,19 +20,11 @@ class ExampleBinding extends Speaker
         $this->setAttributes('model', "MX250");
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)?brightness=10&color=red
-    public function state($value, $args){ 
-        //This is where you control the light
-
-        //This is how you notify Simple Home of the state chagne
-        $this->setState('state', $value);
-    }
-
     //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)?volume=10
     public function state($value, $args) {
         //This is where you control the speaker
 
-        //This is how you notify Simple Home of the state chagne
+        //This is how you notify Simple Home of the state change
         $this->setState('state', $value);
     }
 
@@ -40,16 +32,16 @@ class ExampleBinding extends Speaker
     public function play() {
         //This is where you control the speaker
 
-        //This is how you notify Simple Home of the state chagne
-        $this->setState('playing', $value);
+        //This is how you notify Simple Home of the state change
+        $this->setState('playing', '');
     }
 
     //API (GET): http://localhost/api/v2/device/(hostname)/(property)/pause/
     public function pause() {
         //This is where you control the speaker
 
-        //This is how you notify Simple Home of the state chagne
-        $this->setState('playing', $value);
+        //This is how you notify Simple Home of the state change
+        $this->setState('playing', '');
     }
 
     //API (GET): http://localhost/api/v2/device/(hostname)/(property)/next/
