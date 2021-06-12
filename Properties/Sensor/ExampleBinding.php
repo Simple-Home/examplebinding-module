@@ -1,13 +1,13 @@
 <?php
-namespace Modules\ExampleBinding\Properties\Sensor;
+namespace Modules\ExampleBinding\Properties\sensor;
 
-use App\PropertyTypes\Sensor\Sensor;
+use App\PropertyTypes\sensor\sensor;
 
 /**
  * Class Example
- * @package App\PropertyTypes\Sensor
+ * @package App\PropertyTypes\sensor
  */
-class ExampleBinding extends Sensor
+class ExampleBinding extends sensor
 {
     public $supportedAttributes = ["wifi","battery","uptime", "model"];
 
@@ -20,7 +20,7 @@ class ExampleBinding extends Sensor
         $this->setAttributes('model', "MX250");
     }
 
-    //API (GET): http://localhost/api/v2/property/(hostname)/state/(value)?brightness=10&color=red
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)
     public function state($value){ 
         //This is where you control the light
 

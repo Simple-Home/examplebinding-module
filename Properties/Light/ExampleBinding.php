@@ -20,7 +20,7 @@ class ExampleBinding extends light
         $this->setAttributes('model', "MX250");
     }
 
-    //API (GET): http://localhost/api/v2/property/(hostname)/state/(value)?brightness=10&color=red
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)?color=red
     public function state($value, $args){ 
         //This is where you control the light
 
@@ -29,7 +29,7 @@ class ExampleBinding extends light
         $this->setState('brightness', $args['brightness']);
     }
 
-    //API (GET): http://localhost/api/v2/property/(hostname)/brightness/(value)
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/brightness/(value)
     public function brightness($value){  
         //To just control the brightness use this
 
@@ -37,7 +37,7 @@ class ExampleBinding extends light
         $this->setState('brightness', $value);
     }
 
-    //API (GET): http://localhost/api/v2/property/(hostname)/color/(value)
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/color/(value)
     public function color($value){
         //To just control the color use this
 
@@ -45,7 +45,7 @@ class ExampleBinding extends light
         $this->setState('color', $value);
     }
     
-    //API (GET): http://localhost/api/v2/property/(hostname)/effect/(value)
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/effect/(value)
     public function effect($value){
         //To just control the effect use this
 
@@ -53,7 +53,7 @@ class ExampleBinding extends light
         $this->setState('effect', $value);
     }
 
-    //API (GET): http://localhost/api/v2/property/(hostname)/colorTemp/(value)
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/colorTemp/(value)
     public function colorTemp($value){
         //To just control the colorTemp use this
 

@@ -1,13 +1,13 @@
 <?php
-namespace Modules\ExampleBinding\Properties\Speaker;
+namespace Modules\ExampleBinding\Properties\speaker;
 
-use App\PropertyTypes\Speaker\Speaker;
+use App\PropertyTypes\speaker\speaker;
 
 /**
  * Class Example
- * @package App\PropertyTypes\Speaker
+ * @package App\PropertyTypes\speaker
  */
-class ExampleBinding extends Speaker
+class ExampleBinding extends speaker
 {
     public $supportedAttributes = ["wifi","battery","uptime", "model"];
 
@@ -20,7 +20,7 @@ class ExampleBinding extends Speaker
         $this->setAttributes('model', "MX250");
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)?volume=10
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)?volume=red
     public function state($value, $args) {
         //This is where you control the speaker
 
@@ -28,7 +28,7 @@ class ExampleBinding extends Speaker
         $this->setState('state', $value);
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/play/
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/play
     public function play() {
         //This is where you control the speaker
 
@@ -36,7 +36,7 @@ class ExampleBinding extends Speaker
         $this->setState('playing', '');
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/pause/
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/pause
     public function pause() {
         //This is where you control the speaker
 
@@ -44,22 +44,22 @@ class ExampleBinding extends Speaker
         $this->setState('playing', '');
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/next/
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/next
     public function next() {
         //This is where you control the speaker
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/back/
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/back
     public function back() {
         //This is where you control the speaker
     }
     
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/forward/
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/forward
     public function forward() {
         //This is where you control the speaker
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/reverse/
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/reverse
     public function reverse() {
         //This is where you control the speaker
     }
@@ -69,7 +69,7 @@ class ExampleBinding extends Speaker
         //This is where you control the speaker
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/volume/(value)
     public function volume($value) {
         //This is where you control the light
 

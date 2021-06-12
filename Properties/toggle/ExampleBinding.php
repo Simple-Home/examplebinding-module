@@ -20,7 +20,7 @@ class ExampleBinding extends toggle
         $this->setAttributes('model', "MX250");
     }
 
-    //API (GET): http://localhost/api/v2/property/(hostname)/state/(value)?brightness=10&color=red
+    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)
     public function state($value){ 
         //This is where you control the light
 
