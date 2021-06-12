@@ -1,13 +1,13 @@
 <?php
-namespace Modules\ExampleBinding\Properties\BasicSwitch;
+namespace Modules\ExampleBinding\Properties\toggle;
 
-use App\PropertyTypes\BasicSwitch\BasicSwitch;
+use App\PropertyTypes\toggle\toggle;
 
 /**
  * Class Example
- * @package App\PropertyTypes\BasicSwitch
+ * @package App\PropertyTypes\toggle
  */
-class ExampleBinding extends BasicSwitch
+class ExampleBinding extends toggle
 {
     public $supportedAttributes = ["wifi","battery","uptime", "model"];
 
