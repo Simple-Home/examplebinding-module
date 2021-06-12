@@ -9,11 +9,12 @@ use App\PropertyTypes\toggle\toggle;
  */
 class ExampleBinding extends toggle
 {
-    public $supportedAttributes = ["wifi","battery","uptime", "model"];
+    public $supportedAttributes = ["wifi","battery","uptime", "s/n", "model"];
 
     public function __construct($meta){
         $this->meta = $meta;
         $this->features = $this->getFeatures($this);
+        $this->settings = $meta['property']->settings;
 
         //Set property properties, these can be anything!
         $this->setAttributes('s/n', "DMRM36078");
