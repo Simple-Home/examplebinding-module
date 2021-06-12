@@ -1,13 +1,13 @@
 <?php
-namespace Modules\ExampleBinding\Properties\Light;
+namespace Modules\ExampleBinding\Properties\light;
 
-use App\PropertyTypes\Light\Light;
+use App\PropertyTypes\light\light;
 
 /**
  * Class Example
- * @package App\PropertyTypes\Light
+ * @package App\PropertyTypes\light
  */
-class ExampleBinding extends Light
+class ExampleBinding extends light
 {
     public $supportedAttributes = ["wifi","battery","uptime", "model"];
 
