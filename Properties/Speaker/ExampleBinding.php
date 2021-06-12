@@ -72,5 +72,8 @@ class ExampleBinding extends Speaker
     //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)
     public function volume($value) {
         //This is where you control the light
+
+        //This is how you notify Simple Home of the state change
+        $this->setState('volume', $value);
     }
 }
