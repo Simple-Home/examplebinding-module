@@ -21,7 +21,7 @@ class ExampleBinding extends toggle
         $this->setAttributes('model', "MX250");
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)
+    //API (GET): http://localhost/api/v2/device/(hostname)/state/(value)
     public function state($value){ 
         //This is where you control the light
 

@@ -21,7 +21,7 @@ class ExampleBinding extends speaker
         $this->setAttributes('model', "MX250");
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/state/(value)?volume=red
+    //API (GET): http://localhost/api/v2/device/(hostname)/state/(value)?volume=red
     public function state($value, $args) {
         //This is where you control the speaker
 
@@ -29,7 +29,7 @@ class ExampleBinding extends speaker
         $this->setState('state', $value);
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/play
+    //API (GET): http://localhost/api/v2/device/(hostname)/play
     public function play() {
         //This is where you control the speaker
 
@@ -37,7 +37,7 @@ class ExampleBinding extends speaker
         $this->setState('playing', '');
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/pause
+    //API (GET): http://localhost/api/v2/device/(hostname)/pause
     public function pause() {
         //This is where you control the speaker
 
@@ -45,32 +45,32 @@ class ExampleBinding extends speaker
         $this->setState('playing', '');
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/next
+    //API (GET): http://localhost/api/v2/device/(hostname)/next
     public function next() {
         //This is where you control the speaker
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/back
+    //API (GET): http://localhost/api/v2/device/(hostname)/back
     public function back() {
         //This is where you control the speaker
     }
     
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/forward
+    //API (GET): http://localhost/api/v2/device/(hostname)/forward
     public function forward() {
         //This is where you control the speaker
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/reverse
+    //API (GET): http://localhost/api/v2/device/(hostname)/reverse
     public function reverse() {
         //This is where you control the speaker
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/mute/(value)
+    //API (GET): http://localhost/api/v2/device/(hostname)/mute/(value)
     public function mute($value) {
         //This is where you control the speaker
     }
 
-    //API (GET): http://localhost/api/v2/device/(hostname)/(property)/volume/(value)
+    //API (GET): http://localhost/api/v2/device/(hostname)/volume/(value)
     public function volume($value) {
         //This is where you control the light
 
