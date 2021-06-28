@@ -1,13 +1,11 @@
 {
     "name": "ExampleBinding",
     "alias": "ExampleBinding",
-    "description": "",
+    "description": "An example integration for Simple Home",
     "keywords": [],
     "active": 1,
     "order": 0,
-    "providers": [
-        "Modules\\ExampleBinding\\Providers\\ExampleBindingServiceProvider"
-    ],
+    "providers": [],
     "aliases": {},
     "files": [
         "start.php"

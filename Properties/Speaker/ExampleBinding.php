@@ -14,7 +14,7 @@ class ExampleBinding extends speaker
     public function __construct($meta){
         $this->meta = $meta;
         $this->features = $this->getFeatures($this);
-        $this->settings = $meta['property']->settings;
+        $this->settings = $meta['settings'];
 
         //Set property properties, these can be anything!
         $this->setAttributes('s/n', "DMRM36078");
