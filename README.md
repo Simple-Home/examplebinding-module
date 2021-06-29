@@ -31,13 +31,6 @@
 ## Requirements
 *  Simple Home Server
 
-## Config Keys
-#### Integration Settings
-*  ```simplehome.integrations.ExampleBinding.(SettingName)```
-#### Device Settings
-*  ```simplehome.device.(DeviceID).(SettingName)```
-`
-
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 

@@ -2,6 +2,7 @@
 namespace Modules\ExampleBinding\Properties\speaker;
 
 use App\PropertyTypes\speaker\speaker;
+use App\Helpers\SettingManager;
 
 /**
  * Class Example
@@ -14,7 +15,6 @@ class ExampleBinding extends speaker
     public function __construct($meta){
         $this->meta = $meta;
         $this->features = $this->getFeatures($this);
-        $this->settings = $meta['settings'];
 
         //Set property properties, these can be anything!
         $this->setAttributes('s/n', "DMRM36078");
@@ -54,7 +54,7 @@ class ExampleBinding extends speaker
     public function back() {
         //This is where you control the speaker
     }
-    
+
     //API (GET): http://localhost/api/v2/device/(hostname)/forward
     public function forward() {
         //This is where you control the speaker

@@ -2,6 +2,7 @@
 namespace Modules\ExampleBinding\Properties\light;
 
 use App\PropertyTypes\light\light;
+use App\Helpers\SettingManager;
 
 /**
  * Class Example
@@ -14,7 +15,6 @@ class ExampleBinding extends light
     public function __construct($meta){
         $this->meta = $meta;
         $this->features = $this->getFeatures($this);
-        $this->settings = $meta['settings'];
 
         //Set property properties, these can be anything!
         $this->setAttributes('s/n', "DMRM36078");
@@ -22,16 +22,16 @@ class ExampleBinding extends light
     }
 
     //API (GET): http://localhost/api/v2/device/(hostname)/state/(value)?color=red
-    public function state($value, $args){ 
+    public function state($value, $args){
         //This is where you control the light
 
         //This is how you notify Simple Home of the state change
-        $this->setState('state', $this->propertySettings);
+        $this->setState('state', $value);
         $this->setState('brightness', $args['brightness']);
     }
 
     //API (GET): http://localhost/api/v2/device/(hostname)/brightness/(value)
-    public function brightness($value){  
+    public function brightness($value){
         //To just control the brightness use this
 
         //Brightness control code here
@@ -45,7 +45,7 @@ class ExampleBinding extends light
         //Color control code here
         $this->setState('color', $value);
     }
-    
+
     //API (GET): http://localhost/api/v2/device/(hostname)/effect/(value)
     public function effect($value){
         //To just control the effect use this
