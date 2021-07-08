@@ -3,7 +3,7 @@
 namespace Modules\ExampleBinding\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Database\Eloquent\Factory;
+use App\Helpers\SettingManager;
 
 class ExampleBindingServiceProvider extends ServiceProvider
 {
@@ -14,6 +14,12 @@ class ExampleBindingServiceProvider extends ServiceProvider
      */
     protected $defer = false;
 
+    /** Settings this integration needs to create  */
+    public function createSettings()
+    {
+        SettingManager::register('customSetting1', '', 'string', 'examplebinding');
+    }
+
     /**
      * Boot the application events.
      *
@@ -23,6 +29,7 @@ class ExampleBindingServiceProvider extends ServiceProvider
     {
         $this->registerTranslations();
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+        $this->createSettings();
     }
 
     /**
